@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidad — ElCambio VE</title>
+<meta name="description" content="Política de privacidad de la aplicación ElCambio VE: calculadora de tasa del dólar, Pago Móvil y códigos QR.">
+<meta name="color-scheme" content="dark">
+<style>
+  :root{
+    --bg:#131314;
+    --card:#1c1b1c;
+    --card-2:#232223;
+    --text:#e5e2e3;
+    --text-dim:#a9a5a7;
+    --title:#ffffff;
+    --blue:#0056ff;
+    --blue-soft:#8fb2ff;
+    --yellow:#fed000;
+    --line:#312f30;
+    --radius:14px;
+  }
+
+  *{box-sizing:border-box;}
+
+  html{-webkit-text-size-adjust:100%;}
+
+  body{
+    margin:0;
+    padding:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .page{
+    max-width:800px;
+    margin:0 auto;
+    padding:32px 20px 72px;
+  }
+
+  /* ---------- Cabecera ---------- */
+  .hero{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:28px 24px;
+    margin-bottom:24px;
+    border-top:4px solid var(--blue);
+  }
+
+  .badge{
+    display:inline-block;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+    color:var(--yellow);
+    background:rgba(254,208,0,.10);
+    border:1px solid rgba(254,208,0,.35);
+    border-radius:999px;
+    padding:5px 12px;
+    margin-bottom:14px;
+  }
+
+  h1{
+    color:var(--title);
+    font-size:clamp(26px,6vw,36px);
+    line-height:1.2;
+    margin:0 0 6px;
+    letter-spacing:-.02em;
+  }
+
+  .subtitle{
+    margin:0 0 18px;
+    color:var(--text-dim);
+    font-size:15px;
+  }
+
+  .meta{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+    gap:12px;
+    margin:0 0 20px;
+    padding:0;
+  }
+
+  .meta div{
+    background:var(--card-2);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:10px 12px;
+  }
+
+  .meta dt{
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.07em;
+    text-transform:uppercase;
+    color:var(--text-dim);
+    margin:0 0 3px;
+  }
+
+  .meta dd{
+    margin:0;
+    color:var(--title);
+    font-size:15px;
+    word-break:break-word;
+  }
+
+  .lead{
+    margin:0;
+    background:rgba(0,86,255,.10);
+    border-left:4px solid var(--blue);
+    border-radius:8px;
+    padding:14px 16px;
+    font-size:16px;
+  }
+
+  .lead strong{color:#fff;}
+
+  /* ---------- Índice ---------- */
+  .toc{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:20px 24px;
+    margin-bottom:28px;
+  }
+
+  .toc h2{
+    font-size:13px;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+    color:var(--text-dim);
+    margin:0 0 12px;
+  }
+
+  .toc ol{
+    margin:0;
+    padding-left:20px;
+    columns:2;
+    column-gap:28px;
+  }
+
+  .toc li{margin:0 0 6px;break-inside:avoid;}
+
+  .toc a{
+    color:var(--blue-soft);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+  }
+
+  .toc a:hover,.toc a:focus{
+    border-bottom-color:var(--blue-soft);
+  }
+
+  /* ---------- Secciones ---------- */
+  section{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:24px;
+    margin-bottom:18px;
+  }
+
+  h2{
+    color:var(--title);
+    font-size:clamp(20px,4.4vw,24px);
+    line-height:1.3;
+    margin:0 0 14px;
+    padding-left:14px;
+    border-left:4px solid var(--yellow);
+    letter-spacing:-.01em;
+  }
+
+  h3{
+    color:var(--title);
+    font-size:17px;
+    margin:22px 0 8px;
+  }
+
+  h3:first-of-type{margin-top:4px;}
+
+  p{margin:0 0 14px;}
+
+  section > *:last-child{margin-bottom:0;}
+
+  ul,ol{padding-left:22px;margin:0 0 14px;}
+
+  li{margin:0 0 8px;}
+
+  li > ul,li > ol{margin-top:8px;}
+
+  a{color:var(--blue-soft);}
+
+  strong{color:#fff;}
+
+  code{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.9em;
+    background:var(--card-2);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:1px 6px;
+    color:var(--yellow);
+  }
+
+  .placeholder{
+    color:var(--yellow);
+    background:rgba(254,208,0,.10);
+    border:1px dashed rgba(254,208,0,.45);
+    border-radius:6px;
+    padding:1px 6px;
+    font-size:.94em;
+    white-space:nowrap;
+  }
+
+  /* ---------- Tablas ---------- */
+  .table-wrap{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    margin:0 0 18px;
+    border:1px solid var(--line);
+    border-radius:10px;
+  }
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:15px;
+    min-width:520px;
+  }
+
+  caption{
+    caption-side:top;
+    text-align:left;
+    color:var(--text-dim);
+    font-size:13px;
+    padding:10px 12px 0;
+  }
+
+  th,td{
+    text-align:left;
+    vertical-align:top;
+    padding:11px 13px;
+    border-bottom:1px solid var(--line);
+  }
+
+  thead th{
+    background:var(--card-2);
+    color:var(--title);
+    font-size:12px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    border-bottom:2px solid var(--blue);
+  }
+
+  tbody tr:last-child td{border-bottom:none;}
+
+  tbody tr:nth-child(even) td{background:rgba(255,255,255,.018);}
+
+  /* ---------- Avisos ---------- */
+  .callout{
+    background:var(--card-2);
+    border:1px solid var(--line);
+    border-left:4px solid var(--yellow);
+    border-radius:10px;
+    padding:14px 16px;
+    margin:0 0 18px;
+    font-size:15.5px;
+  }
+
+  .callout.blue{border-left-color:var(--blue);}
+
+  .callout p:last-child{margin-bottom:0;}
+
+  .checklist{
+    list-style:none;
+    padding-left:0;
+  }
+
+  .checklist li{
+    padding-left:28px;
+    position:relative;
+  }
+
+  .checklist li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    top:0;
+    color:var(--yellow);
+    font-weight:700;
+  }
+
+  .note-editable{
+    background:rgba(0,86,255,.08);
+    border:1px dashed var(--blue);
+    border-radius:10px;
+    padding:14px 16px;
+    margin:26px 0 0;
+    font-size:14.5px;
+    color:var(--text-dim);
+  }
+
+  .note-editable strong{color:var(--yellow);}
+
+  footer{
+    margin-top:28px;
+    padding-top:18px;
+    border-top:1px solid var(--line);
+    color:var(--text-dim);
+    font-size:14px;
+    text-align:center;
+  }
+
+  footer p{margin:0 0 4px;}
+
+  .top-link{
+    display:inline-block;
+    margin-top:10px;
+    font-size:13px;
+    color:var(--blue-soft);
+    text-decoration:none;
+  }
+
+  /* ---------- Móvil ---------- */
+  @media (max-width:640px){
+    body{font-size:16px;}
+    .page{padding:18px 14px 56px;}
+    .hero,section{padding:20px 16px;}
+    .toc{padding:18px 16px;}
+    .toc ol{columns:1;}
+    table{font-size:14px;min-width:460px;}
+    th,td{padding:9px 10px;}
+    h2{font-size:19px;}
+    .placeholder{white-space:normal;}
+  }
+
+  /* ---------- Impresión ---------- */
+  @media print{
+    body{background:#fff;color:#111;font-size:12pt;}
+    .hero,section,.toc,.callout{background:#fff;border-color:#ccc;break-inside:avoid;}
+    h1,h2,h3,strong,.meta dd{color:#000;}
+    .toc a,a{color:#0033aa;}
+    .note-editable{display:none;}
+  }
+</style>
+</head>
+<body>
+<main class="page" id="top">
+
+  <header class="hero">
+    <span class="badge">Política de Privacidad</span>
+    <h1>ElCambio VE</h1>
+    <p class="subtitle">Calculadora de tasa del dólar, Pago Móvil y códigos QR para Venezuela.</p>
+
+    <dl class="meta">
+      <div>
+        <dt>Entrada en vigor</dt>
+        <dd>5 de octubre de 2026</dd>
+      </div>
+      <div>
+        <dt>Última actualización</dt>
+        <dd>5 de octubre de 2026</dd>
+      </div>
+      <div>
+        <dt>Responsable</dt>
+        <dd><span class="placeholder">[NOMBRE DEL RESPONSABLE]</span></dd>
+      </div>
+      <div>
+        <dt>Correo de contacto</dt>
+        <dd><span class="placeholder">[CORREO DE CONTACTO]</span></dd>
+      </div>
+    </dl>
+
+    <p class="lead">
+      <strong>Resumen en una frase:</strong> la app <strong>no requiere registro</strong> y
+      <strong>no recopila datos personales identificables</strong>; los datos que guardas
+      (tus cuentas de Pago Móvil, tus preferencias y tus montos rápidos) <strong>se quedan en tu teléfono</strong>.
+      Aparte de eso, la app usa servicios de terceros (analítica anónima de Google y anuncios) que se detallan más abajo.
+    </p>
+  </header>
+
+  <nav class="toc" aria-label="Índice de la política de privacidad">
+    <h2>Índice</h2>
+    <ol>
+      <li><a href="#responsable">Quién es el responsable</a></li>
+      <li><a href="#no-recopilamos">Qué datos NO recopilamos</a></li>
+      <li><a href="#solo-telefono">Datos que se guardan solo en tu teléfono</a></li>
+      <li><a href="#terceros">Datos que se envían a terceros</a></li>
+      <li><a href="#permisos">Permisos que usa la app</a></li>
+      <li><a href="#no-hacemos">Qué NO hacemos con tus datos</a></li>
+      <li><a href="#seguridad">Seguridad</a></li>
+      <li><a href="#menores">Menores de edad</a></li>
+      <li><a href="#derechos">Tus derechos y cómo ejercerlos</a></li>
+      <li><a href="#cambios">Cambios en esta política</a></li>
+      <li><a href="#legislacion">Legislación aplicable</a></li>
+      <li><a href="#google-play">Resumen para Google Play (Seguridad de los datos)</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ol>
+  </nav>
+
+  <section id="responsable">
+    <h2>1. Quién es el responsable</h2>
+    <p>
+      Esta política de privacidad describe cómo se tratan los datos en la aplicación móvil
+      <strong>ElCambio VE</strong> (en adelante, «la app»), una aplicación para consultar la tasa
+      del dólar y del USDT, calcular montos, gestionar cuentas de Pago Móvil y generar códigos QR de pago.
+    </p>
+    <p>
+      El responsable del tratamiento es <span class="placeholder">[NOMBRE DEL RESPONSABLE]</span>,
+      con correo de contacto <span class="placeholder">[CORREO DE CONTACTO]</span>.
+    </p>
+    <p>
+      Al instalar y usar la app aceptas las prácticas descritas en este documento. Si no estás de acuerdo,
+      puedes simplemente no usar la app o desinstalarla.
+    </p>
+  </section>
+
+  <section id="no-recopilamos">
+    <h2>2. Qué datos NO recopilamos</h2>
+    <p>La app <strong>no tiene registro, ni inicio de sesión, ni cuentas de usuario</strong>. No te pedimos ningún dato para usarla.</p>
+    <p>En concreto, la app <strong>no solicita ni utiliza</strong>:</p>
+    <ul class="checklist">
+      <li>Nombre, apellido, documento de identidad, correo electrónico ni número de teléfono tuyo (no hay formularios de registro).</li>
+      <li>Ubicación (GPS o aproximada por el dispositivo).</li>
+      <li>Contactos, agenda ni libreta de direcciones.</li>
+      <li>Cámara, micrófono, fotos, videos ni archivos personales.</li>
+      <li>Mensajes, llamadas ni historial de comunicación.</li>
+      <li>Datos de salud, datos biométricos ni datos financieros de tus cuentas bancarias reales.</li>
+      <li>Datos de niños o menores de edad de forma consciente.</li>
+    </ul>
+    <p>
+      La app tampoco accede a tu lista de aplicaciones instaladas, a tus cuentas del sistema ni a tus credenciales bancarias.
+    </p>
+  </section>
+
+  <section id="solo-telefono">
+    <h2>3. Datos que se guardan solo en tu teléfono</h2>
+    <p>
+      Para funcionar, la app guarda cierta información <strong>únicamente en el almacenamiento interno de tu dispositivo</strong>.
+      Esta información <strong>nunca se envía a nosotros</strong> ni a nuestros servidores: no tenemos servidores propios que reciban estos datos.
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <caption>Datos guardados localmente en el teléfono</caption>
+        <thead>
+          <tr>
+            <th scope="col">Dato guardado</th>
+            <th scope="col">Para qué sirve</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cuentas de Pago Móvil que tú registres: alias, banco, tipo y número de cédula o RIF, y teléfono</td>
+            <td>Para mostrarlas y usarlas al generar un pago o un código QR</td>
+          </tr>
+          <tr>
+            <td>Cuenta predeterminada</td>
+            <td>Para agilizar los pagos que haces con más frecuencia</td>
+          </tr>
+          <tr>
+            <td>Montos rápidos personalizados</td>
+            <td>Para calcular montos frecuentes con un toque</td>
+          </tr>
+          <tr>
+            <td>Tasa preferida y moneda inicial</td>
+            <td>Para abrir la app con la tasa (BCV, USDT o euro) y la moneda que prefieres</td>
+          </tr>
+          <tr>
+            <td>Preferencias: modo ultra ligero, tasas sin conexión, intervalo de actualización</td>
+            <td>Para respetar cómo quieres que se comporte la app</td>
+          </tr>
+          <tr>
+            <td>Última tasa guardada</td>
+            <td>Para que la app siga siendo útil cuando no tienes conexión a internet</td>
+          </tr>
+          <tr>
+            <td>Estado de la recompensa de anuncios (por ejemplo, si tienes horas sin publicidad activas)</td>
+            <td>Para no mostrarte anuncios mientras la recompensa esté vigente</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Importante:</strong> los datos de la persona que te paga <strong>no se guardan nunca</strong>. Se usan solo en el momento de generar el pago o el código QR y no quedan almacenados en el teléfono.</p>
+
+    <h3>Cómo controlas estos datos</h3>
+    <ul>
+      <li>Puedes <strong>ver, editar y borrar</strong> tus cuentas de Pago Móvil y tus preferencias dentro de la app (secciones <em>Ajustes</em> y <em>Mis Cuentas</em>).</li>
+      <li>Puedes borrar <strong>todos</strong> los datos de una sola vez <strong>desinstalando la app</strong>: al desinstalarla, el sistema operativo elimina los datos locales.</li>
+      <li>Como estos datos solo existen en tu teléfono, nosotros no podemos verlos, recuperarlos ni modificarlos. Si haces una copia de seguridad del dispositivo, esa copia la controla tu sistema operativo o tu proveedor de servicios.</li>
+    </ul>
+  </section>
+
+  <section id="terceros">
+    <h2>4. Datos que se envían a terceros</h2>
+    <p>
+      Para funcionar, la app se comunica con algunos servicios externos. <strong>Estos envíos no incluyen tus datos personales identificables</strong>
+      (nunca cédula, RIF, teléfono, alias de cuenta ni montos exactos) y se detallan a continuación.
+    </p>
+
+    <h3>4.1. API de tasas (DolarVzla)</h3>
+    <p>
+      La app hace una petición por conexión cifrada (HTTPS) a la API de tasas para obtener el valor del dólar y del USDT.
+      Esa petición incluye una clave de la aplicación y, como en cualquier consulta web, la dirección IP
+      y datos técnicos básicos de la conexión. <strong>No se envían datos personales tuyos</strong> ni el contenido de tus cuentas.
+    </p>
+    <p>
+      Este servicio es necesario para que la app muestre la tasa; sin él, la app solo puede usar la última tasa guardada en tu teléfono.
+    </p>
+
+    <h3>4.2. Google Firebase Analytics (analítica de uso anónima)</h3>
+    <p>
+      La app usa Firebase Analytics para entender, de forma agregada y anónima, cómo se usa y así poder mejorarla.
+      <strong>No se envía información que te identifique personalmente.</strong> Lo que se registra es:
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <caption>Eventos de analítica y su nivel de detalle</caption>
+        <thead>
+          <tr>
+            <th scope="col">Lo que se registra</th>
+            <th scope="col">Nivel de detalle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Versión de la app</td><td>Número de versión instalada</td></tr>
+          <tr><td>Pantalla que se abre</td><td>Nombre de la sección usada (por ejemplo, calculadora o cuentas)</td></tr>
+          <tr><td>Qué tasa se elige</td><td>BCV, USDT o euro</td></tr>
+          <tr><td>Moneda utilizada</td><td>Moneda seleccionada en la app</td></tr>
+          <tr><td>Rango del monto</td><td><strong>Solo el rango</strong>, por ejemplo «5-20». <strong>Nunca el monto exacto.</strong></td></tr>
+          <tr><td>Si se genera un código QR</td><td>Sí o no</td></tr>
+          <tr><td>Banco de las cuentas que guardas</td><td><strong>Código y nombre del banco</strong> únicamente. Sin números, sin cédula, sin RIF, sin teléfono y sin alias.</td></tr>
+          <tr><td>Uso de la recompensa de anuncios</td><td>Si se activa o se usa la recompensa de video</td></tr>
+          <tr><td>Tipo de dispositivo y sistema operativo</td><td>Modelo y versión del sistema</td></tr>
+          <tr><td>Idioma y región aproximada</td><td>Idioma del dispositivo y región estimada a partir de la dirección IP</td></tr>
+          <tr><td>Identificadores de app y de dispositivo</td><td>Identificadores técnicos que usa el servicio de analítica</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <p><strong>Lo que la analítica nunca recibe:</strong> cédula, RIF, número de teléfono, alias de tus cuentas, montos exactos, ni el contenido de los códigos QR que generas.</p>
+    </div>
+
+    <h3>4.3. Google AdMob (anuncios)</h3>
+    <p>
+      La app muestra anuncios a través de Google AdMob. Para mostrar anuncios, AdMob puede tratar el
+      <strong>identificador de publicidad del dispositivo</strong>, la <strong>dirección IP</strong> y
+      <strong>datos del dispositivo</strong> (modelo, sistema operativo, idioma).
+    </p>
+    <p>
+      La app incluye <strong>anuncios bonificados (video con recompensa)</strong>: al ver <strong>5 anuncios</strong> obtienes
+      <strong>24 horas sin publicidad</strong>. Esta recompensa es <strong>opcional</strong>: eres tú quien decide verla.
+    </p>
+    <p>
+      En Android puedes <strong>restablecer o limitar el identificador de publicidad</strong> desde los ajustes del sistema
+      (normalmente en <em>Ajustes → Google → Anuncios</em>). El tratamiento que hace Google de estos datos se rige por sus propias políticas de privacidad.
+    </p>
+
+    <h3>4.4. Google Play (si descargas la app desde la tienda)</h3>
+    <p>
+      Si instalas la app desde Google Play, Google recopila datos de instalación y de uso de la tienda
+      (por ejemplo, la propia descarga y las estadísticas de la ficha) según sus propias políticas.
+      Nosotros no controlamos esa recopilación.
+    </p>
+  </section>
+
+  <section id="permisos">
+    <h2>5. Permisos que usa la app</h2>
+    <p>La app solicita únicamente los permisos necesarios para funcionar:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Permiso</th>
+            <th scope="col">Para qué se usa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Internet</td>
+            <td>Consultar la tasa del dólar y del USDT y cargar los anuncios</td>
+          </tr>
+          <tr>
+            <td>Estado de la red</td>
+            <td>Detectar si tienes conexión para usar la última tasa guardada cuando estás sin internet</td>
+          </tr>
+          <tr>
+            <td>Identificador de publicidad</td>
+            <td>Añadido por el SDK de anuncios, para mostrar publicidad</td>
+          </tr>
+          <tr>
+            <td>Vibración</td>
+            <td>Dar respuesta táctil al usar la app</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      La app <strong>no accede a archivos personales, contactos, cámara ni ubicación</strong>, y no pide permisos que no estén en esta lista.
+    </p>
+  </section>
+
+  <section id="no-hacemos">
+    <h2>6. Qué NO hacemos con tus datos</h2>
+    <ul class="checklist">
+      <li><strong>No vendemos ni alquilamos</strong> datos personales.</li>
+      <li><strong>No usamos tus datos para publicidad propia</strong> ni para crear perfiles publicitarios nuestros.</li>
+      <li><strong>No hacemos perfilado</strong> con datos personales tuyos.</li>
+      <li><strong>No compartimos datos con terceros</strong> más allá de los servicios descritos en esta política (Google y la API de tasas).</li>
+      <li><strong>No transferimos</strong> tus cuentas de Pago Móvil, tus montos ni tus preferencias fuera de tu teléfono.</li>
+    </ul>
+  </section>
+
+  <section id="seguridad">
+    <h2>7. Seguridad</h2>
+    <ul>
+      <li>Los datos sensibles (cuentas de Pago Móvil, alias, teléfonos, preferencias) <strong>se quedan en tu dispositivo</strong> y quedan protegidos por el propio sistema operativo del teléfono.</li>
+      <li>Las comunicaciones de la app con los servicios externos <strong>se realizan por conexiones cifradas (HTTPS)</strong>.</li>
+      <li>No mantenemos bases de datos con tu información personal, porque la app no nos envía ese tipo de información.</li>
+      <li>Ningún sistema es 100 % infalible: te recomendamos mantener tu teléfono actualizado y protegido con bloqueo de pantalla.</li>
+    </ul>
+  </section>
+
+  <section id="menores">
+    <h2>8. Menores de edad</h2>
+    <p>
+      La app <strong>no está dirigida a menores de 13 años</strong> y <strong>no recopila datos de menores de forma consciente</strong>.
+      Si eres padre, madre o representante y crees que un menor a tu cargo nos ha proporcionado datos personales,
+      escríbenos a <span class="placeholder">[CORREO DE CONTACTO]</span> y los eliminaremos si corresponde.
+    </p>
+  </section>
+
+  <section id="derechos">
+    <h2>9. Tus derechos y cómo ejercerlos</h2>
+    <p>
+      Como la app no tiene cuentas ni nos envía datos personales identificables, <strong>tú tienes el control directo</strong>
+      sobre la información que existe (la que está en tu teléfono):
+    </p>
+    <ul>
+      <li><strong>Ver</strong> tus datos guardados: en la app, en <em>Ajustes</em> y <em>Mis Cuentas</em>.</li>
+      <li><strong>Editar</strong> cualquier cuenta, monto rápido, tasa o preferencia desde esas mismas secciones.</li>
+      <li><strong>Eliminar</strong> datos concretos dentro de la app, o <strong>todo</strong> desinstalando la aplicación.</li>
+      <li><strong>Limitar la publicidad personalizada</strong> restableciendo o limitando el identificador de publicidad en los ajustes de Android.</li>
+      <li><strong>Desactivar la analítica</strong> desinstalando la app (la analítica solo funciona mientras la app está instalada) o limitando las opciones de uso compartido de datos del sistema.</li>
+    </ul>
+    <p>
+      Si tienes dudas, consultas o solicitudes relacionadas con la privacidad, escríbenos a
+      <span class="placeholder">[CORREO DE CONTACTO]</span>. Responderemos en un plazo razonable.
+      También puedes ejercer los derechos que te reconozca la legislación aplicable en tu país.
+    </p>
+  </section>
+
+  <section id="cambios">
+    <h2>10. Cambios en esta política</h2>
+    <p>
+      Podemos actualizar esta política para reflejar cambios en la app o en los servicios que utiliza.
+      Cuando lo hagamos, indicaremos la <strong>fecha de última actualización</strong> al inicio de esta página.
+    </p>
+    <p>
+      Si el cambio es importante (por ejemplo, si se empezara a recopilar un tipo de dato nuevo), lo avisaremos
+      en la ficha de la tienda o dentro de la propia app antes de que el cambio entre en vigor.
+    </p>
+    <p>
+      Versión vigente: <strong>5 de octubre de 2026</strong>. Te recomendamos revisar esta página de vez en cuando.
+    </p>
+  </section>
+
+  <section id="legislacion">
+    <h2>11. Legislación aplicable</h2>
+    <p>
+      Esta política se rige por las leyes de la <strong>República Bolivariana de Venezuela</strong>,
+      sin perjuicio de los derechos que te correspondan según la normativa de protección de datos que resulte aplicable en tu lugar de residencia.
+    </p>
+    <p>
+      Responsable: <span class="placeholder">[NOMBRE DEL RESPONSABLE]</span> ·
+      Contacto: <span class="placeholder">[CORREO DE CONTACTO]</span>
+    </p>
+  </section>
+
+  <section id="google-play">
+    <h2>12. Resumen para Google Play (Seguridad de los datos)</h2>
+    <p>
+      Este apartado resume la información anterior en el formato que pide la sección
+      <strong>«Seguridad de los datos»</strong> de Google Play Console. Es un resumen de esta misma política.
+    </p>
+
+    <h3>Datos que la app recopila o comparte</h3>
+    <ul>
+      <li><strong>Identificador de publicidad del dispositivo</strong> — recopilado por el SDK de anuncios (Google AdMob) — finalidad: <em>publicidad y marketing</em> — <strong>se comparte</strong> con Google — puede limitarse desde los ajustes de Android.</li>
+      <li><strong>Analítica de uso anónima</strong> (versión de la app, pantalla abierta, tasa elegida, moneda, rango del monto, si se genera un QR, código y nombre del banco de las cuentas guardadas, uso de la recompensa, dispositivo y sistema operativo, idioma y región aproximada por IP, identificadores de app/dispositivo) — recopilada por Google Firebase Analytics — finalidad: <em>analítica y mejora de la app</em> — <strong>se comparte</strong> con Google.</li>
+      <li><strong>Dirección IP y datos técnicos de la conexión</strong> — necesarios para consultar la API de tasas (DolarVzla) y para los servicios de Google — finalidad: <em>funcionamiento de la app y publicidad</em> — <strong>se comparte</strong> con esos proveedores.</li>
+      <li><strong>Datos de instalación y uso de la tienda</strong> — tratados por Google Play cuando instalas la app desde la tienda — finalidad: <em>distribución y estadísticas de la ficha</em>.</li>
+    </ul>
+
+    <div class="table-wrap">
+      <table>
+        <caption>Resumen por tipo de dato</caption>
+        <thead>
+          <tr>
+            <th scope="col">Tipo de dato</th>
+            <th scope="col">¿Se recopila?</th>
+            <th scope="col">Finalidad</th>
+            <th scope="col">¿Se comparte?</th>
+            <th scope="col">¿Es opcional?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Datos personales identificables (nombre, cédula, RIF, teléfono, correo)</td>
+            <td>No</td>
+            <td>—</td>
+            <td>No</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Ubicación</td>
+            <td>No</td>
+            <td>—</td>
+            <td>No</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Contactos, cámara, micrófono, fotos, archivos, mensajes</td>
+            <td>No</td>
+            <td>—</td>
+            <td>No</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Datos financieros reales (cuentas bancarias, montos exactos)</td>
+            <td>No</td>
+            <td>—</td>
+            <td>No</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Identificador de publicidad</td>
+            <td>Sí</td>
+            <td>Publicidad</td>
+            <td>Sí (Google AdMob)</td>
+            <td>Se puede limitar o restablecer en los ajustes de Android; la recompensa de video es opcional</td>
+          </tr>
+          <tr>
+            <td>Analítica de uso anónima</td>
+            <td>Sí</td>
+            <td>Analítica y mejora de la app</td>
+            <td>Sí (Google Firebase Analytics)</td>
+            <td>No hay interruptor en la app; se detiene al desinstalar</td>
+          </tr>
+          <tr>
+            <td>Rango del monto (nunca el monto exacto)</td>
+            <td>Sí</td>
+            <td>Analítica</td>
+            <td>Sí (Google)</td>
+            <td>No hay interruptor en la app</td>
+          </tr>
+          <tr>
+            <td>Código y nombre del banco de las cuentas guardadas</td>
+            <td>Sí</td>
+            <td>Analítica</td>
+            <td>Sí (Google)</td>
+            <td>No hay interruptor en la app</td>
+          </tr>
+          <tr>
+            <td>Contenido de las cuentas guardadas (alias, cédula/RIF, teléfono)</td>
+            <td>No (solo en el teléfono)</td>
+            <td>Funcionamiento de la app</td>
+            <td>No</td>
+            <td>El usuario decide qué guardar</td>
+          </tr>
+          <tr>
+            <td>Preferencias y última tasa guardada</td>
+            <td>No (solo en el teléfono)</td>
+            <td>Funcionamiento de la app</td>
+            <td>No</td>
+            <td>El usuario puede cambiarlas o borrarlas</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Puntos clave para el formulario</h3>
+    <ul>
+      <li>Los datos están <strong>cifrados en tránsito</strong> (conexiones HTTPS).</li>
+      <li>El usuario puede <strong>solicitar la eliminación</strong> de sus datos: los datos locales se borran desde la app o desinstalándola; para cualquier solicitud puede escribir a <span class="placeholder">[CORREO DE CONTACTO]</span>.</li>
+      <li>La app <strong>no vende datos personales</strong> ni los usa para publicidad propia.</li>
+      <li>La app <strong>no está dirigida a menores de 13 años</strong>.</li>
+      <li>La recopilación distinta de la analítica y los anuncios <strong>no existe</strong>: no hay registro, login ni formularios.</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>13. Contacto</h2>
+    <p>
+      Para cualquier duda, consulta o solicitud sobre esta política de privacidad o sobre el tratamiento de datos,
+      puedes escribir a:
+    </p>
+    <ul>
+      <li><strong>Responsable:</strong> <span class="placeholder">[NOMBRE DEL RESPONSABLE]</span></li>
+      <li><strong>Correo:</strong> <span class="placeholder">[CORREO DE CONTACTO]</span></li>
+    </ul>
+    <p>Última actualización: <strong>5 de octubre de 2026</strong>.</p>
+  </section>
+
+  <p class="note-editable">
+    <strong>Nota para quien publica esta página (borra este párrafo cuando termines):</strong>
+    reemplaza los marcadores <strong>[NOMBRE DEL RESPONSABLE]</strong> y <strong>[CORREO DE CONTACTO]</strong>
+    por tus datos reales en este archivo <code>index.html</code> (y también en <code>PRIVACY.md</code>).
+    Aparecen en las secciones 1, 8, 9, 11, 12 y 13. Si prefieres no publicar tu nombre,
+    puedes dejar solo un correo de contacto como responsable.
+  </p>
+
+  <footer>
+    <p><strong>ElCambio VE</strong> — Política de Privacidad</p>
+    <p>Entrada en vigor: 5 de octubre de 2026 · Última actualización: 5 de octubre de 2026</p>
+    <a class="top-link" href="#top">Volver arriba</a>
+  </footer>
+
+</main>
+</body>
+</html>
