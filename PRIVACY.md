@@ -4,7 +4,7 @@
 **Entrada en vigor:** 5 de octubre de 2026
 **Última actualización:** 5 de octubre de 2026
 **Responsable:** el desarrollador de ElCambio VE
-**Correo de contacto:** la seccion Â«Contactar al desarrolladorÂ» de la ficha de esta app en Google Play
+**Correo de contacto:** la sección «Contactar al desarrollador» de la ficha de esta app en Google Play
 
 > **Resumen en una frase:** la app **no requiere registro** y **no recopila datos personales identificables**; los datos que guardas (tus cuentas de Pago Móvil, tus preferencias y tus montos rápidos) **se quedan en tu teléfono**. Aparte de eso, la app usa servicios de terceros (analítica anónima de Google y anuncios) que se detallan más abajo.
 
@@ -30,7 +30,7 @@
 
 Esta política de privacidad describe cómo se tratan los datos en la aplicación móvil **ElCambio VE** (en adelante, «la app»), una aplicación para consultar la tasa del dólar y del USDT, calcular montos, gestionar cuentas de Pago Móvil y generar códigos QR de pago.
 
-El responsable del tratamiento es **el desarrollador de ElCambio VE**, con correo de contacto **la seccion Â«Contactar al desarrolladorÂ» de la ficha de esta app en Google Play**.
+El responsable del tratamiento es **el desarrollador de ElCambio VE**, con correo de contacto **la sección «Contactar al desarrollador» de la ficha de esta app en Google Play**.
 
 Al instalar y usar la app aceptas las prácticas descritas en este documento. Si no estás de acuerdo, puedes simplemente no usar la app o desinstalarla.
 
@@ -144,7 +144,7 @@ La app **no accede a archivos personales, contactos, cámara ni ubicación**, y 
 
 ## 8. Menores de edad
 
-La app **no está dirigida a menores de 13 años** y **no recopila datos de menores de forma consciente**. Si eres padre, madre o representante y crees que un menor a tu cargo nos ha proporcionado datos personales, escríbenos a **la seccion Â«Contactar al desarrolladorÂ» de la ficha de esta app en Google Play** y los eliminaremos si corresponde.
+La app **no está dirigida a menores de 13 años** y **no recopila datos de menores de forma consciente**. Si eres padre, madre o representante y crees que un menor a tu cargo nos ha proporcionado datos personales, escríbenos a **la sección «Contactar al desarrollador» de la ficha de esta app en Google Play** y los eliminaremos si corresponde.
 
 ## 9. Tus derechos y cómo ejercerlos
 
@@ -156,7 +156,7 @@ Como la app no tiene cuentas ni nos envía datos personales identificables, **t�
 - **Limitar la publicidad personalizada** restableciendo o limitando el identificador de publicidad en los ajustes de Android.
 - **Desactivar la analítica** desinstalando la app (la analítica solo funciona mientras la app está instalada) o limitando las opciones de uso compartido de datos del sistema.
 
-Si tienes dudas, consultas o solicitudes relacionadas con la privacidad, escríbenos a **la seccion Â«Contactar al desarrolladorÂ» de la ficha de esta app en Google Play**. Responderemos en un plazo razonable. También puedes ejercer los derechos que te reconozca la legislación aplicable en tu país.
+Si tienes dudas, consultas o solicitudes relacionadas con la privacidad, escríbenos a **la sección «Contactar al desarrollador» de la ficha de esta app en Google Play**. Responderemos en un plazo razonable. También puedes ejercer los derechos que te reconozca la legislación aplicable en tu país.
 
 ## 10. Cambios en esta política
 
@@ -170,7 +170,7 @@ Versión vigente: **5 de octubre de 2026**. Te recomendamos revisar este documen
 
 Esta política se rige por las leyes de la **República Bolivariana de Venezuela**, sin perjuicio de los derechos que te correspondan según la normativa de protección de datos que resulte aplicable en tu lugar de residencia.
 
-Responsable: **el desarrollador de ElCambio VE** · Contacto: **la seccion Â«Contactar al desarrolladorÂ» de la ficha de esta app en Google Play**
+Responsable: **el desarrollador de ElCambio VE** · Contacto: **la sección «Contactar al desarrollador» de la ficha de esta app en Google Play**
 
 ## 12. Resumen para Google Play (Seguridad de los datos)
 
@@ -201,7 +201,7 @@ Este apartado resume la información anterior en el formato que pide la sección
 ### Puntos clave para el formulario
 
 - Los datos están **cifrados en tránsito** (conexiones HTTPS).
-- El usuario puede **solicitar la eliminación** de sus datos: los datos locales se borran desde la app o desinstalándola; para cualquier solicitud puede escribir a **la seccion Â«Contactar al desarrolladorÂ» de la ficha de esta app en Google Play**.
+- El usuario puede **solicitar la eliminación** de sus datos: los datos locales se borran desde la app o desinstalándola; para cualquier solicitud puede escribir a **la sección «Contactar al desarrollador» de la ficha de esta app en Google Play**.
 - La app **no vende datos personales** ni los usa para publicidad propia.
 - La app **no está dirigida a menores de 13 años**.
 - La recopilación distinta de la analítica y los anuncios **no existe**: no hay registro, login ni formularios.
@@ -211,7 +211,7 @@ Este apartado resume la información anterior en el formato que pide la sección
 Para cualquier duda, consulta o solicitud sobre esta política de privacidad o sobre el tratamiento de datos, puedes escribir a:
 
 - **Responsable:** el desarrollador de ElCambio VE
-- **Correo:** la seccion Â«Contactar al desarrolladorÂ» de la ficha de esta app en Google Play
+- **Correo:** la sección «Contactar al desarrollador» de la ficha de esta app en Google Play
 
 Última actualización: **5 de octubre de 2026**.
 
